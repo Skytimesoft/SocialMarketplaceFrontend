@@ -1,0 +1,3 @@
+<template>
+    AddFunds
+</template>

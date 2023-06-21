@@ -29,6 +29,36 @@ const router = createRouter({
           name: 'ticket',
           component: () => import('../views/user/Ticket.vue')
         },
+        {
+          path: '/orders',
+          name: 'orders',
+          component: () => import('../views/user/Orders.vue')
+        },
+        {
+          path: '/profile',
+          name: 'profile',
+          component: () => import('../views/user/Profile.vue')
+        },
+        {
+          path: '/affiliate-program',
+          name: 'AffiliateProgram',
+          component: () => import('../views/user/AffiliateProgram.vue')
+        },
+        {
+          path: '/add-funds',
+          name: 'AddFunds',
+          component: () => import('../views/user/AddFunds.vue')
+        },
+        {
+          path: '/security',
+          name: 'Security',
+          component: () => import('../views/user/Security.vue')
+        },
+        {
+          path: '/notifications',
+          name: 'Notifications',
+          component: () => import('../views/user/Notifications.vue')
+        },
       ]
     }
   ]

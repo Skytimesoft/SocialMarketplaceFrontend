@@ -1,6 +1,6 @@
 <template>
     <div class="sticky top-0 border-b w-full z-[990]">
-        <div class="bg-indigo-500 text-slate-100">
+        <div class="bg-gray-700 text-slate-100">
             <div class="container mx-auto">
                 <div class="flex justify-between items-center px-4 lg:px-0 py-2">
                     <div>
