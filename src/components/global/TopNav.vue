@@ -82,8 +82,8 @@
                         <div class="relative group/navHover cursor-pointer">
                             <div
                                 class="flex items-center gap-1 border-b-2 border-transparent hover:border-indigo-500 px-4 py-3">
-                                Useful information
-                                <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.5"
+                                Information
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="1.5"
                                     viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5">
                                     </path>
@@ -100,7 +100,7 @@
                             class="flex items-center gap-1 border-b-2 border-transparent hover:border-indigo-500 px-4 py-3">
                             Terms of use
                         </a>
-                        <a href="#" class="flex items-center gap-2 py-2 px-4 text-indigo-600 hover:bg-slate-200 rounded">
+                        <a href="#" class="flex items-center gap-2 py-2 px-4 bg-indigo-600 text-white hover:bg-indigo-700 rounded">
                             <i class="fa-regular fa-bags-shopping"></i>
                             Become a seller
                         </a>

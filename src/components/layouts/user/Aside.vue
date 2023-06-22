@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div class="overflow-y-auto transition-transform bg-white rounded-md w-64 dark:bg-gray-800" tabindex="-1"
+        <div class="sticky top-[120px] overflow-y-auto transition-transform bg-white rounded-md w-64 dark:bg-gray-800" tabindex="-1"
             aria-labelledby="drawer-navigation-label">
             <div class="text-base py-4 px-4 font-semibold bg-indigo-500 text-white flex justify-between items-center">
                 <h3>Balance</h3>
