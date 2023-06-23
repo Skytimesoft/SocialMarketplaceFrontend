@@ -1,8 +1,8 @@
 <template>
     <div class="sticky top-0 border-b w-full z-[990]">
         <div class="bg-gray-700 text-slate-100">
-            <div class="container mx-auto">
-                <div class="flex justify-between items-center px-4 lg:px-0 py-2">
+            <div class="max-w-screen-xl mx-auto">
+                <div class="flex justify-between items-center px-4 xl:px-0 py-2">
                     <div>
                         AccsMarket - Accounts store
                     </div>
@@ -69,15 +69,19 @@
             </div>
         </div>
         <div class="bg-slate-50 shadow hidden lg:block">
-            <div class="container mx-auto">
-                <div class="flex justify-between px-4 lg:px-0">
+            <div class="max-w-screen-xl mx-auto">
+                <div class="flex justify-between px-4 xl:px-0">
                     <div class="flex items-center gap-1">
                         <i class="fa-regular fa-circle-info"></i> New ticket / Ask a question
                     </div>
                     <div class="flex items-center">
-                        <router-link to="/"
+                        <router-link to="/" exact-active-class="!border-indigo-500"
                             class="flex items-center gap-1 border-b-2 border-transparent hover:border-indigo-500 px-4 py-3">
                             Home
+                        </router-link>
+                        <router-link to="/faq" exact-active-class="!border-indigo-500"
+                            class="flex items-center gap-1 border-b-2 border-transparent hover:border-indigo-500 px-4 py-3">
+                            FAQ
                         </router-link>
                         <div class="relative group/navHover cursor-pointer">
                             <div
@@ -100,15 +104,17 @@
                             class="flex items-center gap-1 border-b-2 border-transparent hover:border-indigo-500 px-4 py-3">
                             Terms of use
                         </a>
-                        <a href="#" class="flex items-center gap-2 py-2 px-4 bg-indigo-600 text-white hover:bg-indigo-700 rounded">
+                        <a href="#"
+                            class="flex items-center gap-2 py-2 px-4 bg-indigo-600 text-white hover:bg-indigo-700 rounded">
                             <i class="fa-regular fa-bags-shopping"></i>
                             Become a seller
                         </a>
                     </div>
                 </div>
+            </div>
         </div>
     </div>
-</div></template>
+</template>
 
 <script setup>
 

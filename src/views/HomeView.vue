@@ -1,5 +1,5 @@
 <template>
-	<div class="container mx-auto px-4 mt-7">
+	<div class="mt-7">
 		<h3 class="font-bold text-2xl mb-5">Home</h3>
  
 		<div v-for="(item, index) in categories" :key="index" class="mb-5">
