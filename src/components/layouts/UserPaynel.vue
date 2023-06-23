@@ -55,8 +55,7 @@
     </div>
     <!-- <div class="absolute -inset-px opacity-10 z-[-1] rounded-md bg-gradient-to-r from-indigo-400 to-red-400" aria-hidden="true"></div> -->
   </nav>
-
-
+ 
   <div class="my-10 flex gap-7">
     <Aside />
     <div class="flex-1">
