@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
+import UserPaynel from '../components/layouts/UserPaynel.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -17,7 +18,7 @@ const router = createRouter({
     {
       path: '/user', 
       name: 'user',
-      component: () => import('../components/layouts/UserPaynel.vue'),
+      component: UserPaynel,
       children: [
         {
           path: '',
@@ -25,37 +26,37 @@ const router = createRouter({
           component: () => import('../views/user/Dashboard.vue')
         },
         {
-          path: '/ticket',
+          path: 'ticket',
           name: 'ticket',
           component: () => import('../views/user/Ticket.vue')
         },
         {
-          path: '/orders',
+          path: 'orders',
           name: 'orders',
           component: () => import('../views/user/Orders.vue')
         },
         {
-          path: '/profile',
+          path: 'profile',
           name: 'profile',
           component: () => import('../views/user/Profile.vue')
         },
         {
-          path: '/affiliate-program',
+          path: 'affiliate-program',
           name: 'AffiliateProgram',
           component: () => import('../views/user/AffiliateProgram.vue')
         },
         {
-          path: '/add-funds',
+          path: 'add-funds',
           name: 'AddFunds',
           component: () => import('../views/user/AddFunds.vue')
         },
         {
-          path: '/security',
+          path: 'security',
           name: 'Security',
           component: () => import('../views/user/Security.vue')
         },
         {
-          path: '/notifications',
+          path: 'notifications',
           name: 'Notifications',
           component: () => import('../views/user/Notifications.vue')
         },

@@ -19,7 +19,7 @@
                     </li>
                     <li>
                         <router-link
-                            to="/ticket"
+                            to="/user/ticket"
                             exact-active-class="bg-indigo-500 text-white"
                             class="flex items-center p-2 text-gray-900 rounded-lg hover:bg-indigo-500 hover:text-white">
                             <i class="fa-solid fa-ticket"></i>
@@ -27,7 +27,7 @@
                         </router-link>
                     </li>
                     <li>
-                        <router-link to="/orders"
+                        <router-link to="/user/orders"
                             exact-active-class="bg-indigo-500 text-white"
                             class="flex items-center p-2 text-gray-900 rounded-lg hover:bg-indigo-500 hover:text-white">
                             <i class="fa-duotone fa-cart-shopping"></i>
@@ -35,7 +35,7 @@
                         </router-link>
                     </li>
                     <li>
-                        <router-link to="/profile"
+                        <router-link to="/user/profile"
                             exact-active-class="bg-indigo-500 text-white"
                             class="flex items-center p-2 text-gray-900 rounded-lg hover:bg-indigo-500 hover:text-white">
                             <i class="fa-solid fa-user"></i>
@@ -43,7 +43,7 @@
                         </router-link>
                     </li>
                     <li>
-                        <router-link to="/affiliate-program"
+                        <router-link to="/user/affiliate-program"
                             exact-active-class="bg-indigo-500 text-white"
                             class="flex items-center p-2 text-gray-900 rounded-lg hover:bg-indigo-500 hover:text-white">
                             <i class="fa-duotone fa-share-nodes"></i>
@@ -51,7 +51,7 @@
                         </router-link>
                     </li>
                     <li>
-                        <router-link to="/add-funds"
+                        <router-link to="/user/add-funds"
                             exact-active-class="bg-indigo-500 text-white"
                             class="flex items-center p-2 text-gray-900 rounded-lg hover:bg-indigo-500 hover:text-white">
                             <i class="fa-duotone fa-user-group"></i>
@@ -59,7 +59,7 @@
                         </router-link>
                     </li>
                     <li>
-                        <router-link to="/security"
+                        <router-link to="/user/security"
                             exact-active-class="bg-indigo-500 text-white"
                             class="flex items-center p-2 text-gray-900 rounded-lg hover:bg-indigo-500 hover:text-white">
                             <i class="fa-duotone fa-shield-halved"></i>
@@ -67,7 +67,7 @@
                         </router-link>
                     </li>
                     <li>
-                        <router-link to="/notifications"
+                        <router-link to="/user/notifications"
                             exact-active-class="bg-indigo-500 text-white"
                             class="flex items-center p-2 text-gray-900 rounded-lg hover:bg-indigo-500 hover:text-white">
                             <i class="fa-solid fa-bell-on"></i>
