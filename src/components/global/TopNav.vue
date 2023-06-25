@@ -95,12 +95,15 @@
                             </div>
                             <div
                                 class="hidden p-2 group-hover/navHover:block absolute bg-white min-w-[300px] right-0 top-full shadow-xl divide-y rounded-md overflow-hidden">
-                                <a href="#" v-for="item in 5" :key="item"
-                                    class="block py-2 px-4 hover:bg-indigo-500 hover:text-white rounded-md">link {{ item
-                                    }}</a>
+                                <a href="/recommendations" class="block py-2 px-4 hover:bg-indigo-500 hover:text-white rounded-md">
+                                    Accounts Guidelines
+                                </a>
+                                <a href="/selection" class="block py-2 px-4 hover:bg-indigo-500 hover:text-white rounded-md">
+                                    Software and Services
+                                </a>
                             </div>
                         </div>
-                        <a href="#"
+                        <a href="/rules"
                             class="flex items-center gap-1 border-b-2 border-transparent hover:border-indigo-500 px-4 py-3">
                             Terms of use
                         </a>

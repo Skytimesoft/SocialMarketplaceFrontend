@@ -54,7 +54,7 @@
                         <router-link to="/user/add-funds"
                             exact-active-class="bg-indigo-500 text-white"
                             class="flex items-center p-2 text-gray-900 rounded-lg hover:bg-indigo-500 hover:text-white">
-                            <i class="fa-duotone fa-user-group"></i>
+                            <i class="fa-duotone fa-wallet"></i>
                             <span class="flex-1 ml-3 whitespace-nowrap">Add funds</span>
                         </router-link>
                     </li>

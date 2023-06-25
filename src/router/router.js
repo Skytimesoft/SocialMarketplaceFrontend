@@ -21,6 +21,21 @@ const router = createRouter({
       component: () => import("../views/Faq.vue"),
     },
     {
+      path: "/recommendations",
+      name: "recommendations",
+      component: () => import("../views/Recommendations.vue"),
+    },
+    {
+      path: "/selection",
+      name: "selection",
+      component: () => import("../views/Selection.vue"),
+    },
+    {
+      path: "/rules",
+      name: "rules",
+      component: () => import("../views/Rules.vue"),
+    },
+    {
       path: "/user",
       name: "user",
       component: UserPaynel,

@@ -10,3 +10,10 @@
 ::-webkit-scrollbar-thumb {
     @apply bg-indigo-100 hover:bg-indigo-200;
 }
+
+.selection, .selection tr, .selection th,.selection td {
+    @apply border border-slate-400;
+}
+.selection th, .selection td {
+    @apply py-1 px-2;
+}
