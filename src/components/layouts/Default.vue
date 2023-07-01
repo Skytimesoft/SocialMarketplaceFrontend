@@ -1,7 +1,7 @@
 <template>
     <TopNav />
     <div class="py-3 px-4 xl:px-0">
-        <div class="max-w-screen-xl mx-auto px-4 md:px-0 flex-col sm:flex-row flex justify-between mt-7 gap-5">
+        <div class="max-w-screen-xl mx-auto flex-col sm:flex-row flex justify-between mt-7 gap-5">
             <div class="relative">
                 <button ref="categoryDropBtn" @click="catOpen=!catOpen" class="rounded-md w-full sm:w-auto py-2 dark:bg-red-300 px-5 bg-indigo-500 hover:bg-indigo-600 text-white flex justify-between items-center gap-2">
                     Select Categories

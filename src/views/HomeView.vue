@@ -1,5 +1,5 @@
 <template>
-	<div class="mt-7">
+	<div class="mt-7 2xl:px-0">
 		<h3 class="font-bold text-2xl mb-5">Home</h3>
  
 		<div v-for="(item, index) in categories" :key="index" class="mb-5">
@@ -30,9 +30,14 @@
 					<div class="absolute -inset-px z-[-1] rounded-md bg-gradient-to-r from-indigo-400 to-red-400" aria-hidden="true"></div>
 				</div>
 				<div v-for="item in 2" :key="item*Math.random()" role="button" class="relative flex-col sm:flex-row flex items-center bg-white mb-2 border-2 border-transparent shadow hover:border-indigo-500 rounded-md">
-					<div class="flex-1 flex items-center gap-4 px-3 py-4 font-medium text-gray-900 dark:text-white">
-						<div class="bg-indigo-500 text-white rounded-md shadow-md px-2 py-1">
-							<i class="text-2xl fa-brands fa-facebook"></i>
+					<div class="flex-1 flex flex-col md:flex-row items-center gap-4 px-3 py-4 font-medium text-gray-900 dark:text-white">
+						<div class="flex justify-between w-full md:w-auto">
+							<div class="bg-indigo-500 text-white rounded-md shadow-md px-2 py-1">
+								<i class="text-2xl fa-brands fa-facebook"></i>
+							</div>
+							<button type="button" class="md:hidden text-indigo-700 border border-indigo-700 hover:bg-indigo-700 hover:text-white focus:ring-4 focus:outline-none font-medium rounded-full text-sm p-2.5 text-center inline-flex items-center">
+								<i class="fa-solid fa-cart-shopping"></i>
+							</button>
 						</div>
 						<div class="flex-1">
 							{{ getDetails() }}
@@ -55,13 +60,11 @@
 							<i class="fa-solid fa-cart-shopping"></i>
 						</button>
 					</div>
-					<div class="px-3 py-4 w-[150px] flex flex-col items-end justify-end gap-2 lg:hidden text-right">
-						<div>
-							$2999
-						</div>
-						<button type="button" class="text-indigo-700 border border-indigo-700 hover:bg-indigo-700 hover:text-white focus:ring-4 focus:outline-none font-medium rounded-full text-sm p-2.5 text-center inline-flex items-center">
-							<i class="fa-solid fa-cart-shopping"></i>
-						</button>
+					<div class="px-3 py-4 w-full sm:w-auto flex flex-col items-end justify-end gap-2 lg:hidden text-right">
+						$2999
+						<button type="button" class="lg:hidden text-indigo-700 border border-indigo-700 hover:bg-indigo-700 hover:text-white focus:ring-4 focus:outline-none font-medium rounded-full text-sm p-2.5 text-center inline-flex items-center">
+								<i class="fa-solid fa-cart-shopping"></i>
+							</button>
 					</div>
 				</div>
 			</div>

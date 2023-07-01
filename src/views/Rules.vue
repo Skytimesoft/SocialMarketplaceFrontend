@@ -57,17 +57,18 @@
 
         1.6 Additional information for suppliers:
 
-    Accs Market immediately blocks the identified accounts and access to them if its support detects that the Users,
-    selling the accounts on the website, have more than one account. And all the funds of the User balance are
-    transferred to Accs Market as penalties and are not refundable.
+        Accs Market immediately blocks the identified accounts and access to them if its support detects that the Users,
+        selling the accounts on the website, have more than one account. And all the funds of the User balance are
+        transferred to Accs Market as penalties and are not refundable.
 
-    Useful information for beginners and persons who have problems when working with the accounts -
-    https://accsmarket.com/en/info and https://accsmarket.com/en/faq
+        Useful information for beginners and persons who have problems when working with the accounts -
+        https://accsmarket.com/en/info and https://accsmarket.com/en/faq
 
-    If you have any problems with the purchase, after the purchase of goods, or other difficulties associated with this,
-    please, contact us.
+        If you have any problems with the purchase, after the purchase of goods, or other difficulties associated with this,
+        please, contact us.
 
-    Disclaimer - The accsmarket.com service is an intermediary between account sellers and buyers. The buyers are
-    responsible themselves if use the accounts for any illegal activity. Accsmarket.com does not approve spamming (i.e.,
-    commercial emailing without the prior consent of the recipients) and any fraudulent activity using the accounts.
-</div></template>
+        Disclaimer - The accsmarket.com service is an intermediary between account sellers and buyers. The buyers are
+        responsible themselves if use the accounts for any illegal activity. Accsmarket.com does not approve spamming (i.e.,
+        commercial emailing without the prior consent of the recipients) and any fraudulent activity using the accounts.
+    </div>
+</template>
