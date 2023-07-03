@@ -58,12 +58,12 @@
                         </div>
                     </div>
                     <div class="flex items-center gap-3 lg:hidden">
-                        <button class="py-1 px-3 text-center text-2xl rounded bg-slate-100/20">
+                        <router-link to="/user" class="block py-1 px-3 text-center text-2xl rounded bg-slate-100/20">
                             <i class="fa-duotone fa-user"></i>
-                        </button>
-                        <button class="py-1 px-3 text-center text-2xl rounded">
+                        </router-link>
+                        <!-- <button class="py-1 px-3 text-center text-2xl rounded">
                             <i class="fa-regular fa-bars"></i>
-                        </button>
+                        </button> -->
                     </div>
                 </div>
             </div>
