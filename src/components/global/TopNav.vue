@@ -26,6 +26,10 @@
                             <i class="fa-duotone fa-user"></i>
                             Your Account
                         </router-link>
+                        
+                        <SignInSignUp />
+                        
+                        
                         <div class="flex items-center gap-4 bg-slate-800 rounded py-1 px-4">
                             <div class="flex items-center gap-1">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
@@ -120,5 +124,7 @@
 </template>
 
 <script setup>
+import SignInSignUp from './SignInSignUp.vue';
+
 
 </script>
