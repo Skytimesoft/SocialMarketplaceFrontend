@@ -1,5 +1,5 @@
 <template>
-    <TopNav />
+    <!-- <TopNav />
     <div class="py-3 px-4 xl:px-0">
         <div class="max-w-screen-xl mx-auto flex-col sm:flex-row flex justify-between mt-7 gap-5">
             <div class="relative">
@@ -85,13 +85,13 @@
                     class="rounded border-1 transition-all duration-200 sm:max-w-[500px] w-full">
             </div>
         </div>
-    </div>
+    </div> -->
     <div class="max-w-screen-xl mx-auto px-4 xl:px-0">
         <slot />
     </div>
 
 
-    <footer class="bg-white dark:bg-gray-900 mt-2">
+    <!-- <footer class="bg-white dark:bg-gray-900 mt-2">
         <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
             <div class="sm:flex sm:items-center sm:justify-between">
                 <a href="https://flowbite.com/" class="flex items-center mb-4 sm:mb-0"> 
@@ -116,7 +116,7 @@
             <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a
                     href="https://flowbite.com/" class="hover:underline">Flowbite™</a>. All Rights Reserved.</span>
         </div>
-    </footer>
+    </footer> -->
 </template>
 
 <script setup>

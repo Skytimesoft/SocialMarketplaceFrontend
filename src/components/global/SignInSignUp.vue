@@ -18,7 +18,7 @@
     </div>
 
     <!-- sign up modal -->
-    <div
+    <!-- <div
     x-transition:enter="transition ease-out duration-300"
         x-transition:enter-start="opacity-0 scale-90"
         x-transition:enter-end="opacity-100 scale-100"
@@ -61,7 +61,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <!-- login modal -->
     <div></div></template>
