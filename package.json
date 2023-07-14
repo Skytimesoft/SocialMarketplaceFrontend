@@ -13,6 +13,7 @@
     "axios": "^1.4.0",
     "flowbite": "^1.6.6",
     "lodash": "^4.17.21",
+    "moment": "^2.29.4",
     "vue": "^3.3.4",
     "vue-router": "^4.2.2",
     "vue3-toastify": "^0.1.11"
