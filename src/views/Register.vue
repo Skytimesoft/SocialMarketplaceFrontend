@@ -14,6 +14,10 @@
                     <input type="email" name="email" v-model="form.email" class="py-1 flex-1" required />
                 </label>
                 <label class="flex items-center gap-2">
+                    <span class="w-[150px]">Referral code:</span>
+                    <input type="text" name="referral" v-model="form.referral" class="py-1 flex-1" />
+                </label>
+                <label class="flex items-center gap-2">
                     <span class="w-[150px]">Your password:</span>
                     <input type="password" name="password" v-model="form.password" class="py-1 flex-1" required />
                 </label>
@@ -51,7 +55,7 @@
                 </button>
                 <div class="text-center">
                     Already have an account?
-                    <router-link href="/user-login" class="text-indigo-500">Login</router-link>
+                    <router-link to="/user-login" class="text-indigo-500">Login</router-link>
                 </div>
             </form>
         </div>
@@ -68,6 +72,7 @@ const form = ref({
     password: null,
     password_confirmation: null,
     user_type: null,
+    referral: null,
     agree: false,
 })
 

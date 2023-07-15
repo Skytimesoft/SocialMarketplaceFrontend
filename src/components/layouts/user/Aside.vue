@@ -75,7 +75,7 @@
                         </router-link>
                     </li> 
                     <li>
-                        <button type="button" @click="handleLogout" class="text-base p-3 rounded-md font-semibold bg-red-100 text-red-700 hover:bg-red-500 hover:text-white flex justify-between items-center">
+                        <button type="button" @click="handleLogout" class="w-full text-base p-3 rounded-md font-semibold bg-red-100 text-red-700 hover:bg-red-500 hover:text-white flex justify-left text-left items-center">
                             <i class="fa-solid fa-right-from-bracket"></i>
                             <span class="flex-1 ml-3 whitespace-nowrap">Sign out</span>
                         </button>
@@ -87,13 +87,14 @@
 </template>
 
 <script setup>
+import router from '@/router/router';
 import axios from 'axios';
 
 const handleLogout = () => {
     axios.get('/user/sign-out').then(res => res.data)
     .then(r => {
         localStorage.setItem('d-user-token', null);
-        location.href = '/'
+        router.push('/user-login')
     }).catch(err => console.log(err))
 }
 

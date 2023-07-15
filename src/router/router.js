@@ -5,7 +5,7 @@ import Helper from '@/Helper'
 import axios from "axios";
 
 const checkAuth = (to, from, next) => {
-	if (location.pathname != '/user-login') {
+	if (location.pathname != '/user-login' && location.pathname != '/user-register') {
 		if (!Helper.TOKEN) {
 			location.href = '/user-login'
 		}
