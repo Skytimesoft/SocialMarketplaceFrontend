@@ -5,10 +5,10 @@
             <div class="bg-indigo-500 text-white px-4 py-5 mt-5 rounded-t-md flex items-center justify-between">
                 <div class="flex items-center gap-2">
                     <i class="text-3xl fa-duotone fa-memo-pad"></i>
-                    Total paid so far
+                    Total earning so far
                 </div>
                 <div class="text-3xl font-bold">
-                    $0
+                    ${{ earning }}
                 </div>
             </div>
             <div class="bg-white px-4 py-5 rounded-b-md flex items-center justify-between">
@@ -23,7 +23,7 @@
         </div>
         <div>
             <h3 class="text-xl font-bold">WITHDRAWAL OF EARNED FUNDS</h3>
-            
+
             <label class="grid gap-2">
                 <div>Payment system</div>
                 <select name="" id="" class="w-full py-1 rounded-md">
@@ -44,11 +44,11 @@
             <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
                 <div class="mb-3 grid gap-1">
                     <p>Your referral link 1:</p>
-                    <input type="text" value="http://127.0.0.1:5174/ref=44231123" class="py-1 w-full rounded-md">
+                    <input type="text" :value="profileData.referral_one ? `${Helper.baseUrl}/ref=${profileData.referral_one}` : ''" class="py-1 w-full rounded-md">
                 </div>
                 <div class="mb-3 grid gap-1">
                     <p>Your referral link 2:</p>
-                    <input type="text" value="http://127.0.0.1:5174/ref=44231123" class="py-1 w-full rounded-md">
+                    <input type="text" :value="profileData.referral_two ? `${Helper.baseUrl}/ref=${profileData.referral_two}` : ''" class="py-1 w-full rounded-md">
                 </div>
             </div>
 
@@ -120,8 +120,30 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import Helper from '@/Helper';
+import axios from 'axios';
+import { onMounted, ref } from 'vue'
+import useAffiliate from '@/composables/useAffiliate'
+const { earning, getEarnings } = useAffiliate()
+const profileData = ref({})
 
+onMounted(()=> {
+    axios.get('user/profile')
+        .then(res => res.data)
+        .then(result => {
+            let { data } = result
+            if (data) {
+                profileData.value = data
+                // profileForm.value.name = data.name;
+                // profileForm.value.email = data.email;
+            }
+        })
+        .catch((err,xhr) => {
+            console.log(err);
+        })
 
+    getEarnings()
+
+})
 
 </script>
